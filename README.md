@@ -1,50 +1,53 @@
 <div align="center">
   <img src="img/deepbi-logo.png" alt="DeepBI Logo" width="100" style="border-radius:20%"/>
-  <h1 style="font-size:32px;margin:15px 0 5px">DeepBI - 亚马逊广告API</h1>
-  <p style="font-size:18px;color:#555;margin:0 0 20px">AI驱动亚马逊广告优化专家</p>
+  <h1 style="font-size:32px;margin:15px 0 5px">DeepBI - Amazon Advertising API</h1>
+  <p style="font-size:18px;color:#555;margin:0 0 20px">AI-Driven Amazon Advertising Optimization Expert</p>
+  
+  [English](README.md) | [中文](README_CN.md)
+  
   <hr style="width:60%;margin:25px auto;border-top:1px solid #eee"/>
 </div>
 
-## 🚀 关于 DeepBI
+## 🚀 About DeepBI
 
-> DeepBI为亚马逊卖家提供AI驱动的广告优化解决方案，通过智能策略匹配和数据分析，有效降低广告成本并提升ROI表现。
+> DeepBI provides AI-driven advertising optimization solutions for Amazon sellers, effectively reducing ad costs and improving ROI performance through intelligent strategy matching and data analytics.
 
-我们的核心优势:
-- 🧠 **智能算法匹配** - 自动匹配最佳广告策略
-- 💰 **CPC成本优化** - 降低点击成本，提高广告效率
-- 📈 **ROI指标提升** - 科学分析，精准投放，提升投资回报
-- 🔄 **全自动管理** - 简化广告投放流程，节省时间成本
+Our Core Advantages:
+- 🧠 **Smart Algorithm Matching** - Automatically match the best advertising strategies
+- 💰 **CPC Cost Optimization** - Reduce click costs, improve advertising efficiency
+- 📈 **ROI Improvement** - Scientific analysis, precise delivery, enhanced return on investment
+- 🔄 **Fully Automated Management** - Simplify advertising processes, save time
 
-**[立即访问官网 www.deepbi.com](https://www.deepbi.com)，开启智能广告管理之旅！**
+**[Visit our website www.deepbi.com](https://www.deepbi.com) to start your smart advertising management journey!**
 
 ---
 
-## 🔧 API快速开始
+## 🔧 API Quick Start
 
-这是一个Python 3封装的亚马逊广告API，提供简单易用的接口。
+This is a Python 3 wrapper for Amazon's Advertising API, providing an easy-to-use interface.
 
-### 安装
+### Installation
 
 ```bash
 pip install python-amazon-ad-api
 ```
 
-### 基础使用
+### Basic Usage
 
 ```python
 from ad_api.api import sponsored_products
 
-# 使用默认账户
+# Use default account
 result = sponsored_products.CampaignsV3().list_campaigns()
 
-# 使用指定区域
+# Use specific region
 from ad_api.base import Marketplaces
 result = sponsored_products.CampaignsV3(marketplace=Marketplaces.NA).list_campaigns()
 ```
 
 ### Overview
 
-You need obtain your own credentials with Amazon that may include an amazon developer account and access as seller or vendor. Please view the checklist of [Amazon Ads API onboarding overview](https://advertising.amazon.com/API/docs/en-us/setting-up/overview) 
+You need to obtain your own credentials with Amazon that may include an amazon developer account and access as seller or vendor. Please view the checklist of [Amazon Ads API onboarding overview](https://advertising.amazon.com/API/docs/en-us/setting-up/overview) 
 
 
 ### Code Credentials
@@ -109,8 +112,6 @@ result=sponsored_products.CampaignsV3().list_campaigns()
 # will use germany account data
 result=sponsored_products.CampaignsV3(account="germany").list_campaigns()
 ```
-
-
 
 ### Search path for credentials.yml
 
@@ -422,11 +423,11 @@ This API is based on the [API Client](https://github.com/saleweaver/rapid_rest_c
 We are not affiliated with Amazon but they used our api :)
 
 
-> **归属说明**: 本项目基于[python-amazon-ad-api](https://github.com/denisneuf/python-amazon-ad-api)（MIT许可证）
-> 原作者: Daniel Alvaro (denisneuf@hotmail.com) 和 Michael Primke
+> **Attribution**: This project is based on [python-amazon-ad-api](https://github.com/denisneuf/python-amazon-ad-api) (MIT license)
+> Original authors: Daniel Alvaro (denisneuf@hotmail.com) and Michael Primke
 
 
 <div align="center">
-  <p>© 2024 DeepBI - 专注AI驱动的亚马逊广告优化</p>
+  <p>© 2024 DeepBI - AI-Driven Amazon Advertising Optimization</p>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
 </div>
