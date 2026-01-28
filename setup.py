@@ -15,7 +15,7 @@ setup(
         "cachetools>=5.0,<6.2",
         "pycryptodome>=3.13,<3.24",
         "pytz>=2021.3,<2026.0",
-        "confuse>=1.7,<2.1",
+        "confuse>=1.7,<2.3",
     ],
     packages=[
         'ad_api',
